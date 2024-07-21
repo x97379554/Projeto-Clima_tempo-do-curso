@@ -1,0 +1,86 @@
+:root {
+    --cor-verde-escuro: #365E32;
+    --cor-verde-claro: #81A263;
+    --cor-amarelo: #E7D37F;
+    
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui; /* Adicione a fonte do Game Boy */
+    background-color: var(--cor-verde-escuro); 
+    color: var(--cor-verde-claro); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+}
+
+.container {
+    background-color: var(--cor-verde-escuro);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px var(--cor-amarelo);
+    text-align: center;
+}
+p{
+    margin: 1rem;
+}
+
+h1 {
+    color: var(--cor-amarelo);
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--cor-amarelo);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: var(--cor-verde-escuro);
+    color: var(--cor-amarelo);
+}
+
+button {
+    background-color: var(--cor-verde-claro);
+    color: var(--cor-amarelo);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 15px;
+}
+
+#resultado p {
+    margin-bottom: 5px;
+    color: var(--cor-amarelo) 
+}
+
+
+#icones i {
+    font-size: 30px;
+    margin: 10px;
+    color: var(--cor-amarelo);
+    transition: color 0.3s;
+    transform: scale(1);
+    cursor: pointer;
+}
+#icones :hover{
+    color: var(--cor-verde-claro);
+    transition: color 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
